@@ -1,10 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        int[] a = {101, -34, 0, 2, 99, 4, 4, 1, 66, 11, 100, 48, 24, 83, 31, 11, 9, 76, 66};
-
-        ElementarySort sort = new ElementarySort();
-        sort.bubble(a);
+        int[] a = new Utils().getArrayFromFile("./src/main/java/IntegerArray.txt", 100000);
 
         for (int i = 0; i < a.length; i ++) {
             System.out.println(a[i]);
